@@ -30,7 +30,7 @@ Hint: Maga a bináris keresés algoritmusa adott, csak ki kell kommentezni, a re
 
 Vizsgáljuk meg a futási időket! Mennyivel tart tovább a beszúrás, mint eddig? A választ ide írd be és majd commitold ennek a fájlnak a változásait is a megoldással együtt:
 
-VÁLASZ: Régi futásidő: _____, új futásidő: ______
+VÁLASZ: Régi futásidő: 00.0086504, új futásidő: 00.0169013
 
 Készítsünk egy olyan megvalósítást, ami egy másik adatstruktúrát használ, ahol új elem bárhova beszúrása könnyedén lehetséges!
 
@@ -38,7 +38,7 @@ Hint: LinkedList (és megfelelő függvényei)
 
 A láncolt listás megvalósításnál a bináris keresés lelassult, mivel az elemeket nem tudjuk közvetlenül címezni. Nem nyertünk sokat a listás megvalósításhoz képest. Az elemek sorrendben tárolása nem is annyira fontos, csak a gyors elérésük a cél. A User-eket id-juk alapján akarjuk elérni.
 
-VÁLASZ: A MeasureGetByIdNumber által mért futásidő ebben az esetben: ______ms
+VÁLASZ: A MeasureGetByIdNumber által mért futásidő ebben az esetben: 10000ms
 
 Használjunk egy olyan adatstruktúrát, ahol az egyes elemeket valamilyen kulcs alapján gyorsan el lehet érni!
 
@@ -48,11 +48,11 @@ A példaalkalmazás méri, hogy az egyes megvalósítások mennyi idő alatt vé
 
 Adattároló      | Feltöltési idő    | Lekérdezési idő
 ----------------|-------------------|----------------
-Array           |                   |
-List            |                   |
-List (sorted)   |                   |
-LinkedList      |                   |
-Dictionary      |                   |
+Array           |     00.0055830    |  00.6277929
+List            |      00.0086504   |  00.7989045
+List (sorted)   |      00.0169013   |  00.0477793
+LinkedList      |      00.0275883   |  10.3044877
+Dictionary      |      00.0049004   |  00.0013235
 
 ## Második feladat
 
@@ -79,5 +79,7 @@ Hints:
 Miután megvagyunk a csomagolóval, készítsünk egy új terméket! (Ez lehet bármi. :) ) Ennek a terméknek is tárolhatónak kell lennie a boltban.
 
 Utolsó feladatként vizsgáljuk meg a Program.cs fájlban kikommentezett Iterate, Modify és Reassign függvényeket! Ezek a kollekciókon való iterálást, módosítást, új értékadást szemléltetik. Milyen következtetésre jutunk az új értékadás esetében?
+
+Foreach egy iteráló ciklus (IEnumerable), ami végighalad sorban az elemeken, readonly referencia, ezért csak az attribútumának adható érték, magának az objektumnak nem.
 
 Hint: foreach
